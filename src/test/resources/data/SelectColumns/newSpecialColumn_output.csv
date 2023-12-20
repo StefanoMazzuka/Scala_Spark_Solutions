@@ -1,0 +1,6 @@
+col_0|col_1|col_2|col_3|col_with_value|col_result
+|||3|value|0
+1|||2|value|value
+||2|2|value|value
+|1||3|value|value
+||||value|0
