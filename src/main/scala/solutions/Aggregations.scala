@@ -3,9 +3,9 @@
  * Time: 11:57
  */
 
-package Solutions
+package solutions
 
-import Utils.Read.readCsvWithOptionalSchema
+import utils.Read.readCsvWithOptionalSchema
 import org.apache.spark.sql.functions.max
 import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 

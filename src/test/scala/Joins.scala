@@ -1,6 +1,6 @@
-import Solutions.Joins._
-import Utils.Read.readCsvWithOptionalSchema
-import Utils.SparkUtils.{sparkContext, sparkSession}
+import solutions.Joins._
+import utils.Read.readCsvWithOptionalSchema
+import utils.SparkUtils.{sparkContext, sparkSession}
 import org.scalatest.funsuite.AnyFunSuite
 
 /** Created By O002292

@@ -3,7 +3,7 @@
  * Time: 13:24
  */
 
-package Solutions
+package solutions
 
 object Windows {
 

@@ -3,7 +3,7 @@
  * Time: 12:16
  */
 
-package Utils
+package utils
 
 object Constants {
   val TEST_DATA_PATH  = "src/test/resources/data/"

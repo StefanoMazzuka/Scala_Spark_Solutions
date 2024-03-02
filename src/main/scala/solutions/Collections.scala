@@ -3,7 +3,7 @@
  * Time: 11:38
  */
 
-package Solutions
+package solutions
 
 object Collections {
 

@@ -3,11 +3,11 @@
  * Time: 13:24
  */
 
-package Solutions
+package solutions
 
-import Utils.Columns.{COL_RESULT, COL_WITH_VALUE, FIRST_NOT_NULL_COL}
-import Utils.Read.readCsvWithOptionalSchema
-import Utils.SparkUtils.{sparkContext, sparkSession}
+import utils.Columns.{COL_RESULT, COL_WITH_VALUE, FIRST_NOT_NULL_COL}
+import utils.Read.readCsvWithOptionalSchema
+import utils.SparkUtils.{sparkContext, sparkSession}
 import org.apache.spark.sql.functions.{coalesce, col, lit, when}
 import org.apache.spark.sql.types.{DecimalType, IntegerType, StringType, StructField, StructType}
 import org.apache.spark.sql.{Column, DataFrame, Row}

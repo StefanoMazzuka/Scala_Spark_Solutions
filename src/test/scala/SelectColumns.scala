@@ -1,5 +1,5 @@
-import Solutions.SelectColumns.newSpecialColumn
-import Utils.Read.readCsvWithOptionalSchema
+import solutions.SelectColumns.newSpecialColumn
+import utils.Read.readCsvWithOptionalSchema
 import org.scalatest.funsuite.AnyFunSuite
 
 /** Created By O002292

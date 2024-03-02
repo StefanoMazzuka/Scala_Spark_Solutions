@@ -3,12 +3,12 @@
  * Time: 12:16
  */
 
-package Utils
+package utils
 
-import Utils.Characters.DELIMITER_TYPE
-import Utils.Constants.{CSV_EXTENSION, TEST_DATA_PATH}
-import Utils.Options.{DELIMITER, HEADER}
-import Utils.SparkUtils.{sparkContext, sparkSession, stopSpark}
+import utils.Characters.DELIMITER_TYPE
+import utils.Constants.{CSV_EXTENSION, TEST_DATA_PATH}
+import utils.Options.{DELIMITER, HEADER}
+import utils.SparkUtils.{sparkContext, sparkSession, stopSpark}
 import org.apache.spark.sql.{DataFrame, Row}
 import org.apache.spark.sql.types.{DecimalType, IntegerType, StringType, StructType}
 
