@@ -15,30 +15,37 @@
         <spark.version>3.4.0</spark.version>
         <delta.version>3.0.0</delta.version>
         <delta.version>2.4.0</delta.version>
-        <scala.version>2.12</scala.version>
+        <scala.short.version>2.12</scala.short.version>
+        <scala.version>2.12.10</scala.version>
     </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_${scala.version}</artifactId>
+            <artifactId>spark-sql_${scala.short.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.delta/delta-core -->
         <dependency>
             <groupId>io.delta</groupId>
-            <artifactId>delta-core_${scala.version}</artifactId>
+            <artifactId>delta-core_${scala.short.version}</artifactId>
             <version>${delta.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.scalatest/scalatest -->
         <dependency>
             <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_${scala.version}</artifactId>
+            <artifactId>scalatest_${scala.short.version}</artifactId>
             <version>${scalatest.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>${scala.version}</version>
         </dependency>
     </dependencies>
 </project>

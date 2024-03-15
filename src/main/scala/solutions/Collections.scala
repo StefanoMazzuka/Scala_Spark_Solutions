@@ -17,12 +17,12 @@ object Collections {
 
     val A_map = A.zipWithIndex.toMap
     // Sort sql_columns base in partitions order
-    val C     = B.sortBy(e => A_map.get(e))
+    val C = B.sortBy(e => A_map.get(e))
     // Take last element for sql_columns_sorted
     val last_elemnet = C.last
     val result = A.takeWhile(e => e <= last_elemnet)
     println(result)
-
+  }
     /*
         // Creates a Map[index, partition]
 //    val partitions_map     = table_info.partitions.zipWithIndex.toMap
@@ -35,5 +35,4 @@ object Collections {
 //    // Return partitions until element
 //    table_info.partitions.reverse.dropWhile(_ != element).reverse
      */
-  }
 }
