@@ -1,0 +1,22 @@
+{
+  "step_1" : {
+    "input" : "src/main/resources/csv/data_01.csv",
+    "join" : "",
+    "function" : "    val data = Seq(\n      Row(\"Paco\", \"Garcia\", 20),\n      Row(\"Juan\", \"Garcia\", 26),\n      Row(\"Lola\", \"Martin\", 29),\n      Row(\"Sara\", \"Martin\", 35),\n      Row(\"Paola\", \"Martin\", 30)\n    )\n    val rdd = sparkSession.sparkContext.parallelize(data)\n    val schema = new StructType()\n      .add(\"col_0\", StringType, true)\n      .add(\"col_1\", StringType, true)\n      .add(\"col_2\", IntegerType, true)\n\n    sparkSession.createDataFrame(rdd, schema)"
+  },
+  "step_2" : {
+    "input" : "step_1",
+    "join" : "",
+    "function" : "df.withColumn(\"new_col\", lit(\"value\"))"
+  },
+  "step_3" : {
+    "input" : "step_1",
+    "join" : "step_2",
+    "function" : "df_1.join(df_2, \"new_col\", \"left\")"
+  },
+  "step_4" : {
+    "input" : "step_3",
+    "join" : "",
+    "function" : "function_4"
+  }
+}

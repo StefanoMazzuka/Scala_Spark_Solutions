@@ -54,7 +54,7 @@ object InputManager extends App {
   }
 
   // Ejemplo de uso: cargar el archivo JSON en un Map[String, Attributes]
-  addInput("atributo4", Properties("path4", "schema4", "type4", "filter4"))
+  addInput("table 1", Properties("path1", "schema1", "type1", "filter1"))
   val inputs = loadInputs()
 
   println(loadInput("atributo4").toString)
